@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MAGISTA</title>
+	<meta property="og:title" content="MAGISTA">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="MAGISTA">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body class="bg-dark">
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__group">
+						<button class="hamburger" id="hamburger-toggle">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
+						<a href="#" class="header__btn btn btn--border">
+							<span>Лавка Чудес</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-magic"></use>
+							</svg>
+						</a>
+					</div>
+					<a href="index.html" class="header__logotype">
+						<picture>
+							<img src="img/logotype.svg" alt="MAGISTA">
+						</picture>
+					</a>
+					<div class="header__group">
+						<div class="c-notification header__notification c-notification--dot">
+							<a href="#" class="c-notification__trigger">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-notification"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="c-user header__user">
+							<a href="#" class="c-user__preview">
+								<img src="img/user.jpg" alt="Image">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- faculties test -->
+			<section class="faculties-test" id="faculties-test">
+				<div class="container">
+					<div class="section-heading">
+						<p class="section-heading__description">Пройдите тест, чтобы выбрать <br>подходящий для вас факультет</p>
+					</div>
+					<picture class="faculties-test__bg">
+						<img src="img/faculties-test-bg.jpg" alt="Image">
+					</picture>
+					<div class="faculties-test__wrap">
+						<div class="faculties-test__top">
+							<div class="faculties-test__inner">
+								<span class="faculties-test__question">Вопрос 1/5:</span>
+								<h4 class="faculties-test__title">Из какого материала сделана ваша волшебная палочка?</h4>
+							</div>
+							<div class="faculties-test__progress" style="--value: 20%;">
+								<div class="faculties-test__progress-inner"></div>
+							</div>
+						</div>
+						<div class="faculties-test__main">
+							<div class="faculties-test__holder is--active">
+								<div class="faculties-test__wrapper">
+									<div class="faculties-test__item">
+										<label for="faculties-test-01" class="faculties-test__label">
+											<input type="radio" id="faculties-test-01" class="faculties-test__input" name="faculties-test-01">
+											<div class="faculties-test__group">
+												<svg class="faculties-test__icon">
+													<use xlink:href="img/sprite.svg#icon-check-circle"></use>
+												</svg>
+												<span class="faculties-test__value">Клен</span>
+											</div>
+										</label>
+									</div>
+									<div class="faculties-test__item">
+										<label for="faculties-test-01" class="faculties-test__label">
+											<input type="radio" id="faculties-test-01" class="faculties-test__input" name="faculties-test-01">
+											<div class="faculties-test__group">
+												<svg class="faculties-test__icon">
+													<use xlink:href="img/sprite.svg#icon-check-circle"></use>
+												</svg>
+												<span class="faculties-test__value">Клен</span>
+											</div>
+										</label>
+									</div>
+									<div class="faculties-test__item">
+										<label for="faculties-test-01" class="faculties-test__label">
+											<input type="radio" id="faculties-test-01" class="faculties-test__input" name="faculties-test-01">
+											<div class="faculties-test__group">
+												<svg class="faculties-test__icon">
+													<use xlink:href="img/sprite.svg#icon-check-circle"></use>
+												</svg>
+												<span class="faculties-test__value">Клен</span>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faculties-test__bottom">
+							<a href="#" class="faculties-test__btn btn-decor">
+								<span class="btn-decor__line btn-decor__line--top"></span>
+								<span class="btn-decor__line btn-decor__line--right"></span>
+								<span class="btn-decor__line btn-decor__line--bottom"></span>
+								<span class="btn-decor__line btn-decor__line--left"></span>
+								<svg class="btn-decor__model btn-decor__model--tl">
+									<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+								</svg>
+								<svg class="btn-decor__model btn-decor__model--tr">
+									<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+								</svg>
+								<svg class="btn-decor__model btn-decor__model--bl">
+									<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+								</svg>
+								<svg class="btn-decor__model btn-decor__model--br">
+									<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+								</svg>
+								<!-- content -->
+								<span>Далее</span>
+								<!-- end of content -->
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of faculties test -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer footer--indent" id="footer">
+			<div class="container">
+				<div class="footer__main">
+					<div class="footer__wrapper">
+						<div class="footer__block footer__block--desktop">
+							<picture class="footer__logotype">
+								<img src="img/logotype.svg" alt="MAGISTA">
+							</picture>
+						</div>
+						<div class="footer__block footer__block--desktop">
+							<h3 class="footer__title">Карта Школы:</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">О школе</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">Преподаватели</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">Подписка</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__title">Клиентская поддержка:</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a href="tel:88008008080" class="footer__link">8 (800) 800-80-80</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="mailto:info@magic-school.ru" class="footer__link">info@magic-school.ru</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__title">Наши соцсети:</h3>
+							<div class="c-socnav footer__socnav">
+								<ul class="c-socnav__list">
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__wrapper">
+						<p class="footer__copyright">© 2023 Все права защищены | <a href="#">Политика конфиденциальности</a></p>
+						<p class="footer__copyright">Разработано в <a href="#">Студии Зайцева</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- modals -->
+	<!-- end of modals -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

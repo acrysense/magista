@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MAGISTA</title>
+	<meta property="og:title" content="MAGISTA">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="MAGISTA">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body class="bg-dark">
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__group">
+						<button class="hamburger" id="hamburger-toggle">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
+						<a href="#" class="header__btn btn btn--border">
+							<span>Лавка Чудес</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-magic"></use>
+							</svg>
+						</a>
+					</div>
+					<a href="index.html" class="header__logotype">
+						<picture>
+							<img src="img/logotype.svg" alt="MAGISTA">
+						</picture>
+					</a>
+					<div class="header__group">
+						<div class="c-notification header__notification c-notification--dot">
+							<a href="#" class="c-notification__trigger">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-notification"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="c-user header__user">
+							<a href="#" class="c-user__preview">
+								<img src="img/user.jpg" alt="Image">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- profile -->
+			<section class="profile" id="profile">
+				<div class="container">
+					<div class="section-heading">
+						<h1 class="section-heading__heading">ПРОФИЛЬ УЧЕНИКА</h1>
+					</div>
+					<picture class="profile__bg">
+						<img src="img/profile-bg.jpg" alt="Image">
+					</picture>
+					<div class="profile__top">
+						<div class="profile-user profile__user">
+							<div class="profile-user__img-wrap">
+								<picture class="profile-user__img">
+									<img src="img/user.jpg" alt="Image">
+								</picture>
+							</div>
+							<div class="profile-user__body">
+								<h3 class="profile-user__name">Антон Зайцев</h3>
+								<div class="profile-user__elem">3136302@gmail.com</div>
+							</div>
+						</div>
+					</div>
+					<div class="profile__wrap">
+						<div class="profile__wrapper">
+							<div class="profile__block">
+								<h3 class="profile__title">Личные данные</h3>
+								<form action="#" class="profile-form profile__form">
+									<div class="profile-form__wrapper">
+										<div class="profile-form__column">
+											<div class="profile-form__inner">
+												<div class="input-field profile-form__input">
+													<div class="input-field__inner">
+														<input type="text" id="profile-name" class="input-field__input" placeholder="Введите имя">
+														<svg class="input-field__decor input-field__decor--left">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+														<svg class="input-field__decor input-field__decor--right">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="input-field profile-form__input">
+													<div class="input-field__inner">
+														<input type="email" id="profile-email" class="input-field__input" placeholder="Введите e-mail">
+														<svg class="input-field__decor input-field__decor--left">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+														<svg class="input-field__decor input-field__decor--right">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+											<div class="profile-form__inner">
+												<div class="input-field profile-form__input">
+													<div class="input-field__inner">
+														<input type="text" id="profile-surname" class="input-field__input" placeholder="Введите фамилию">
+														<svg class="input-field__decor input-field__decor--left">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+														<svg class="input-field__decor input-field__decor--right">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="input-field profile-form__input">
+													<div class="input-field__inner">
+														<input type="text" id="profile-phone" class="input-field__input" placeholder="Введите телефон">
+														<svg class="input-field__decor input-field__decor--left">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+														<svg class="input-field__decor input-field__decor--right">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+											<div class="profile-form__inner">
+												<div class="input-field profile-form__input">
+													<div class="input-field__inner">
+														<input type="text" id="profile-city" class="input-field__input" placeholder="Ваш город">
+														<svg class="input-field__decor input-field__decor--left">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+														<svg class="input-field__decor input-field__decor--right">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="input-field profile-form__input">
+													<div class="input-field__inner">
+														<input type="text" id="profile-birthday" class="input-field__input" placeholder="Дата рождения">
+														<svg class="input-field__decor input-field__decor--left">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+														<svg class="input-field__decor input-field__decor--right">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+											<div class="profile-form__inner">
+												<div class="profile-form__group">
+													<button class="profile-form__btn btn-decor">
+														<span class="btn-decor__line btn-decor__line--top"></span>
+														<span class="btn-decor__line btn-decor__line--right"></span>
+														<span class="btn-decor__line btn-decor__line--bottom"></span>
+														<span class="btn-decor__line btn-decor__line--left"></span>
+														<svg class="btn-decor__model btn-decor__model--tl">
+															<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+														</svg>
+														<svg class="btn-decor__model btn-decor__model--tr">
+															<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+														</svg>
+														<svg class="btn-decor__model btn-decor__model--bl">
+															<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+														</svg>
+														<svg class="btn-decor__model btn-decor__model--br">
+															<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+														</svg>
+														<!-- content -->
+														<span>Сохранить</span>
+														<!-- end of content -->
+													</button>
+												</div>
+												<div class="profile-form__group">
+													<span class="profile-form__help">*укажите, если хотите получать бонусы <br>и подарки в день рождения</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="profile__wrapper">
+							<div class="profile__block">
+								<h3 class="profile__title">Изменение пароля</h3>
+								<form action="#" class="profile-form profile__form">
+									<div class="profile-form__wrapper">
+										<div class="profile-form__column">
+											<div class="profile-form__inner">
+												<div class="input-field profile-form__input">
+													<div class="input-field__inner">
+														<input type="password" id="profile-password" class="input-field__input" placeholder="Текущий пароль">
+														<svg class="input-field__decor input-field__decor--left">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+														<svg class="input-field__decor input-field__decor--right">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+											<div class="profile-form__inner">
+												<div class="input-field profile-form__input">
+													<div class="input-field__inner">
+														<input type="text" id="profile-new-password" class="input-field__input" placeholder="Новый пароль">
+														<svg class="input-field__decor input-field__decor--left">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+														<svg class="input-field__decor input-field__decor--right">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+											<div class="profile-form__inner">
+												<div class="input-field profile-form__input">
+													<div class="input-field__inner">
+														<input type="text" id="profile-new-password-repeat" class="input-field__input" placeholder="Повторите пароль">
+														<svg class="input-field__decor input-field__decor--left">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+														<svg class="input-field__decor input-field__decor--right">
+															<use xlink:href="img/sprite.svg#input-decor"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+											<div class="profile-form__inner">
+												<div class="profile-form__group">
+													<button class="profile-form__btn btn-decor">
+														<span class="btn-decor__line btn-decor__line--top"></span>
+														<span class="btn-decor__line btn-decor__line--right"></span>
+														<span class="btn-decor__line btn-decor__line--bottom"></span>
+														<span class="btn-decor__line btn-decor__line--left"></span>
+														<svg class="btn-decor__model btn-decor__model--tl">
+															<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+														</svg>
+														<svg class="btn-decor__model btn-decor__model--tr">
+															<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+														</svg>
+														<svg class="btn-decor__model btn-decor__model--bl">
+															<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+														</svg>
+														<svg class="btn-decor__model btn-decor__model--br">
+															<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+														</svg>
+														<!-- content -->
+														<span>Сохранить</span>
+														<!-- end of content -->
+													</button>
+													<button class="profile-form__btn btn-decor btn-decor--grey">
+														<span class="btn-decor__line btn-decor__line--top"></span>
+														<span class="btn-decor__line btn-decor__line--right"></span>
+														<span class="btn-decor__line btn-decor__line--bottom"></span>
+														<span class="btn-decor__line btn-decor__line--left"></span>
+														<svg class="btn-decor__model btn-decor__model--tl">
+															<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+														</svg>
+														<svg class="btn-decor__model btn-decor__model--tr">
+															<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+														</svg>
+														<svg class="btn-decor__model btn-decor__model--bl">
+															<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+														</svg>
+														<svg class="btn-decor__model btn-decor__model--br">
+															<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+														</svg>
+														<!-- content -->
+														<span>Забыл пароль</span>
+														<!-- end of content -->
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="profile__block profile__block--border">
+								<h3 class="profile__title">Управление подпиской</h3>
+								<div class="profile__subscribe">
+									<h3 class="profile__subtitle">Оформлена подписка на 6 месяцев</h3>
+									<p class="profile__text">Истекает 31.09.2023</p>
+								</div>
+								<form action="#" class="profile-form profile__form">
+									<div class="profile-form__wrapper">
+										<div class="profile-form__column">
+											<div class="profile-form__inner">
+												<button class="profile-form__btn btn-decor">
+													<span class="btn-decor__line btn-decor__line--top"></span>
+													<span class="btn-decor__line btn-decor__line--right"></span>
+													<span class="btn-decor__line btn-decor__line--bottom"></span>
+													<span class="btn-decor__line btn-decor__line--left"></span>
+													<svg class="btn-decor__model btn-decor__model--tl">
+														<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+													</svg>
+													<svg class="btn-decor__model btn-decor__model--tr">
+														<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+													</svg>
+													<svg class="btn-decor__model btn-decor__model--bl">
+														<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+													</svg>
+													<svg class="btn-decor__model btn-decor__model--br">
+														<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+													</svg>
+													<!-- content -->
+													<span>Сохранить</span>
+													<!-- end of content -->
+												</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of profile -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer footer--indent" id="footer">
+			<div class="container">
+				<div class="footer__main">
+					<div class="footer__wrapper">
+						<div class="footer__block footer__block--desktop">
+							<picture class="footer__logotype">
+								<img src="img/logotype.svg" alt="MAGISTA">
+							</picture>
+						</div>
+						<div class="footer__block footer__block--desktop">
+							<h3 class="footer__title">Карта Школы:</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">О школе</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">Преподаватели</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">Подписка</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__title">Клиентская поддержка:</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a href="tel:88008008080" class="footer__link">8 (800) 800-80-80</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="mailto:info@magic-school.ru" class="footer__link">info@magic-school.ru</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__title">Наши соцсети:</h3>
+							<div class="c-socnav footer__socnav">
+								<ul class="c-socnav__list">
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__wrapper">
+						<p class="footer__copyright">© 2023 Все права защищены | <a href="#">Политика конфиденциальности</a></p>
+						<p class="footer__copyright">Разработано в <a href="#">Студии Зайцева</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- modals -->
+	<!-- end of modals -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
