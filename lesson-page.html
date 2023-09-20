@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MAGISTA</title>
+	<meta property="og:title" content="MAGISTA">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="MAGISTA">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body class="bg-dark">
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__group">
+						<button class="hamburger" id="hamburger-toggle">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
+						<a href="#" class="header__btn btn btn--border">
+							<span>Лавка Чудес</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-magic"></use>
+							</svg>
+						</a>
+					</div>
+					<a href="index.html" class="header__logotype">
+						<picture>
+							<img src="img/logotype.svg" alt="MAGISTA">
+						</picture>
+					</a>
+					<div class="header__group">
+						<div class="c-notification header__notification c-notification--dot">
+							<a href="#" class="c-notification__trigger">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-notification"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="c-user header__user">
+							<a href="#" class="c-user__preview">
+								<img src="img/user.jpg" alt="Image">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- lesson -->
+			<section class="lesson section-top" id="lesson">
+				<div class="container">
+					<div class="lesson__top">
+						<span class="lesson__date">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-time"></use>
+							</svg>
+							<span>12 апреля 2023 / 21:30</span>
+						</span>
+						<h1 class="lesson__heading">Урок 1: Основные ингредиенты</h1>
+						<p class="lesson__description">Преподаватель: Анна Иванова</p>
+					</div>
+					<div class="lesson__wrapper">
+						<div class="lesson__left">
+							<a href="#" class="lesson__media">
+								<img src="img/trial-lesson-bg.jpg" alt="Image">
+							</a>
+						</div>
+						<div class="lesson__right"></div>
+					</div>
+					<div class="lesson__content content">
+						<p>
+							Любой из волшебников знает, что в основе зельеварения лежат знанияо ингредиентах и их свойствах.
+							<br>
+							Разобраться в ингредиентах, их свойствах, методах добычи и хранения нам поможет «<b>Травология</b>».
+							<br>
+							<b>Травология — наука о магических растениях.</b>
+						</p>
+						<p class="accent">
+							<b>Ингредиенты разделены на 4 типа: </b>
+						</p>
+						<ul>
+							<li>простые;</li>
+							<li>сложные;</li>
+							<li>редкие;</li>
+							<li>уникальные</li>
+						</ul>
+						<p>
+							Такая классификация обоснована сложностью добычи или хранения ингредиентов.
+							<br>
+							В этом уроке мы изучим основные ингредиенты, которые необходимо знать для составления зелий.
+						</p>
+					</div>
+					<form action="#" class="lesson-form lesson__form">
+						<div class="default-input-field teacher-lesson-form__input">
+							<label for="lesson-hw" class="default-input-field__label">Домашнее задание: опишите ...</label>
+							<div class="default-input-field__inner">
+								<textarea id="lesson-hw" class="default-input-field__textarea" placeholder="Ответ ученика"></textarea>
+							</div>
+						</div>
+						<div class="lesson-form__controls">
+							<button class="lesson-form__btn btn btn--md">Отправить на проверку</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<!-- end of lesson -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer footer--indent" id="footer">
+			<div class="container">
+				<div class="footer__main">
+					<div class="footer__wrapper">
+						<div class="footer__block footer__block--desktop">
+							<picture class="footer__logotype">
+								<img src="img/logotype.svg" alt="MAGISTA">
+							</picture>
+						</div>
+						<div class="footer__block footer__block--desktop">
+							<h3 class="footer__title">Карта Школы:</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">О школе</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">Преподаватели</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">Подписка</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__title">Клиентская поддержка:</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a href="tel:88008008080" class="footer__link">8 (800) 800-80-80</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="mailto:info@magic-school.ru" class="footer__link">info@magic-school.ru</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__title">Наши соцсети:</h3>
+							<div class="c-socnav footer__socnav">
+								<ul class="c-socnav__list">
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__wrapper">
+						<p class="footer__copyright">© 2023 Все права защищены | <a href="#">Политика конфиденциальности</a></p>
+						<p class="footer__copyright">Разработано в <a href="#">Студии Зайцева</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- modals -->
+	<!-- end of modals -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

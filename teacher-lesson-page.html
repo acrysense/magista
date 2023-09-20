@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MAGISTA</title>
+	<meta property="og:title" content="MAGISTA">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="MAGISTA">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body class="bg-dark">
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__group">
+						<button class="hamburger" id="hamburger-toggle">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
+						<a href="#" class="header__btn btn btn--border">
+							<span>Лавка Чудес</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-magic"></use>
+							</svg>
+						</a>
+					</div>
+					<a href="index.html" class="header__logotype">
+						<picture>
+							<img src="img/logotype.svg" alt="MAGISTA">
+						</picture>
+					</a>
+					<div class="header__group">
+						<div class="c-notification header__notification c-notification--dot">
+							<a href="#" class="c-notification__trigger">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-notification"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="c-user header__user">
+							<a href="#" class="c-user__preview">
+								<img src="img/user.jpg" alt="Image">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- teacher lesson -->
+			<section class="teacher-lesson section-top" id="teacher-lesson">
+				<div class="container">
+					<picture class="teacher-lesson__bg">
+						<img src="img/teacher-lesson-bg.jpg" alt="Image">
+					</picture>
+					<div class="teacher-lesson__wrap">
+						<div class="teacher-lesson__top">
+							<div class="teacher-lesson__item is--active">
+								<div class="teacher-lesson__group">
+									<span class="teacher-lesson__date">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-time"></use>
+										</svg>
+										<span>12 апреля 21:30</span>
+									</span>
+								</div>
+								<div class="teacher-lesson__group">
+									<span class="teacher-lesson__head">Урок 1:</span>
+									<h4 class="teacher-lesson__title">Основные ингредиенты</h4>
+								</div>
+							</div>
+							<div class="teacher-lesson__item">
+								<div class="teacher-lesson__group">
+									<span class="teacher-lesson__date">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-time"></use>
+										</svg>
+										<span>13 апреля 21:30</span>
+									</span>
+								</div>
+								<div class="teacher-lesson__group">
+									<span class="teacher-lesson__head">Урок 2:</span>
+									<h4 class="teacher-lesson__title">Магия как Искусство управления реальностью</h4>
+								</div>
+							</div>
+							<div class="teacher-lesson__item">
+								<div class="teacher-lesson__group">
+									<span class="teacher-lesson__date">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-time"></use>
+										</svg>
+										<span>14 апреля 21:30</span>
+									</span>
+								</div>
+								<div class="teacher-lesson__group">
+									<span class="teacher-lesson__head">Урок 3:</span>
+									<h4 class="teacher-lesson__title">Расы и Древние цивилизации</h4>
+								</div>
+							</div>
+						</div>
+						<div class="teacher-lesson__main">
+							<div class="teacher-lesson__info">
+								<div class="teacher-lesson__info-item">
+									<span class="teacher-lesson__elem">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-time"></use>
+										</svg>
+										<span><b>12 апреля 2023 / 21:30</b></span>
+									</span>
+								</div>
+								<div class="teacher-lesson__info-item">
+									<div class="teacher-lesson__elem">
+										<picture>
+											<img src="img/teachers-img-01.jpg" alt="Image">
+										</picture>
+										<span>Преподаватель: <b>Анна Иванова</b></span>
+									</div>
+								</div>
+							</div>
+							<h2 class="teacher-lesson__heading">Урок 1: Основные ингредиенты</h2>
+							<form action="#" class="teacher-lesson-form teacher-lesson__form">
+								<div class="default-input-field teacher-lesson-form__input">
+									<label for="teacher-lesson-url" class="default-input-field__label">Настройки трансляции c YouTube</label>
+									<div class="default-input-field__inner">
+										<input type="text" id="teacher-lesson-url" class="default-input-field__input" placeholder="URL трансляции" value="URL трансляции: rtmp://stream.youtube.com:443/vlive.567.eyJuIMDh9/">
+									</div>
+								</div>
+								<div class="default-input-field teacher-lesson-form__input">
+									<div class="default-input-field__inner">
+										<input type="text" id="teacher-lesson-url-reserved" class="default-input-field__input" placeholder="Резервный URL трансляции:  rtmp://stream.youtube.com:443/vlive.5">
+									</div>
+								</div>
+								<div class="default-input-field teacher-lesson-form__input">
+									<div class="default-input-field__inner">
+										<input type="text" id="teacher-lesson-key" class="default-input-field__input" placeholder="Ключ трансляции:  Fv3_JmFZp05G4p">
+									</div>
+								</div>
+								<button class="teacher-lesson-form__btn btn btn--md">Сохранить</button>
+							</form>
+							<form action="#" class="teacher-lesson-form teacher-lesson__form">
+								<div class="default-input-field teacher-lesson-form__input">
+									<label for="teacher-lesson-hw" class="default-input-field__label">Домашнее задание:</label>
+									<div class="default-input-field__inner">
+										<textarea id="teacher-lesson-hw" class="default-input-field__textarea" placeholder="Описание домашки"></textarea>
+									</div>
+								</div>
+								<button class="teacher-lesson-form__btn btn btn--md">Сохранить</button>
+							</form>
+						</div>
+						<div class="teacher-lesson__bottom">
+							<button class="teacher-lesson__btn btn-decor">
+								<span class="btn-decor__line btn-decor__line--top"></span>
+								<span class="btn-decor__line btn-decor__line--right"></span>
+								<span class="btn-decor__line btn-decor__line--bottom"></span>
+								<span class="btn-decor__line btn-decor__line--left"></span>
+								<svg class="btn-decor__model btn-decor__model--tl">
+									<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+								</svg>
+								<svg class="btn-decor__model btn-decor__model--tr">
+									<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+								</svg>
+								<svg class="btn-decor__model btn-decor__model--bl">
+									<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+								</svg>
+								<svg class="btn-decor__model btn-decor__model--br">
+									<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+								</svg>
+								<!-- content -->
+								<span>Начать урок</span>
+								<!-- end of content -->
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of teacher lesson -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer footer--indent" id="footer">
+			<div class="container">
+				<div class="footer__main">
+					<div class="footer__wrapper">
+						<div class="footer__block footer__block--desktop">
+							<picture class="footer__logotype">
+								<img src="img/logotype.svg" alt="MAGISTA">
+							</picture>
+						</div>
+						<div class="footer__block footer__block--desktop">
+							<h3 class="footer__title">Карта Школы:</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">О школе</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">Преподаватели</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">Подписка</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__title">Клиентская поддержка:</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a href="tel:88008008080" class="footer__link">8 (800) 800-80-80</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="mailto:info@magic-school.ru" class="footer__link">info@magic-school.ru</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__title">Наши соцсети:</h3>
+							<div class="c-socnav footer__socnav">
+								<ul class="c-socnav__list">
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__wrapper">
+						<p class="footer__copyright">© 2023 Все права защищены | <a href="#">Политика конфиденциальности</a></p>
+						<p class="footer__copyright">Разработано в <a href="#">Студии Зайцева</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- modals -->
+	<!-- end of modals -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
