@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MAGISTA</title>
+	<meta property="og:title" content="MAGISTA">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="MAGISTA">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body class="bg-dark">
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__group">
+						<button class="hamburger" id="hamburger-toggle">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
+						<a href="#" class="header__btn btn btn--border">
+							<span>Лавка Чудес</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-magic"></use>
+							</svg>
+						</a>
+					</div>
+					<a href="index.html" class="header__logotype">
+						<picture>
+							<img src="img/logotype.svg" alt="MAGISTA">
+						</picture>
+					</a>
+					<div class="header__group">
+						<div class="c-notification header__notification c-notification--dot">
+							<a href="#" class="c-notification__trigger">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-notification"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="c-user header__user">
+							<a href="#" class="c-user__preview">
+								<img src="img/user.jpg" alt="Image">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- schedule -->
+			<section class="schedule section-top" id="schedule">
+				<div class="container">
+					<div class="section-heading">
+						<h1 class="section-heading__heading">РАСПИСАНИЕ ЗАНЯТИЙ</h1>
+					</div>
+					<picture class="schedule__bg">
+						<img src="img/schedule-bg.jpg" alt="Image">
+					</picture>
+					<div class="schedule__wrap">
+						<div class="schedule__top">
+							<h3 class="schedule__title">Курс </h3>
+							<h2 class="schedule__heading">«Основы Магии»</h2>
+							<h4 class="schedule__subtitle">(1 поток)</h4>
+						</div>
+						<div class="schedule__wrapper">
+							<div class="schedule__item schedule-card is--disabled">
+								<div class="schedule-card__group">
+									<span class="schedule-card__date">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-time"></use>
+										</svg>
+										<span>10.05.2023 – 18:00 </span>
+									</span>
+								</div>
+								<div class="schedule-card__group">
+									<span class="schedule-card__head">Урок 1:</span>
+									<h4 class="schedule-card__title">Эзотерические (сакральные) знания, как ключи к магии</h4>
+								</div>
+							</div>
+							<div class="schedule__item schedule-card is--disabled">
+								<div class="schedule-card__group">
+									<span class="schedule-card__date">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-time"></use>
+										</svg>
+										<span>15.05.2023 – 18:00 </span>
+									</span>
+								</div>
+								<div class="schedule-card__group">
+									<span class="schedule-card__head">Урок 2:</span>
+									<h4 class="schedule-card__title">Магия как Искусство управления реальностью</h4>
+								</div>
+							</div>
+							<div class="schedule__item schedule-card is--active">
+								<div class="schedule-card__group">
+									<span class="schedule-card__date">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-time"></use>
+										</svg>
+										<span>20.05.2023 – 18:00 </span>
+									</span>
+								</div>
+								<div class="schedule-card__group">
+									<span class="schedule-card__head">Урок 3:</span>
+									<h4 class="schedule-card__title">Расы и Древние цивилизации</h4>
+								</div>
+							</div>
+							<div class="schedule__item schedule-card is--active">
+								<div class="schedule-card__group">
+									<span class="schedule-card__date">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-time"></use>
+										</svg>
+										<span>25.05.2023 – 18:00 </span>
+									</span>
+								</div>
+								<div class="schedule-card__group">
+									<span class="schedule-card__head">Урок 4:</span>
+									<h4 class="schedule-card__title">Скрытые исторические факты</h4>
+								</div>
+							</div>
+							<div class="schedule__item schedule-card is--active">
+								<div class="schedule-card__group">
+									<span class="schedule-card__date">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-time"></use>
+										</svg>
+										<span>30.05.2023 – 18:00 </span>
+									</span>
+								</div>
+								<div class="schedule-card__group">
+									<span class="schedule-card__head">Урок 5:</span>
+									<h4 class="schedule-card__title">Скрытые исторические факты</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="schedule__wrap">
+						<div class="schedule__top">
+							<h2 class="schedule__heading">Личные консультациии</h2>
+							<p class="schedule__description">Выберите свободные временные слоты</p>
+						</div>
+						<div class="schedule-table schedule__table">
+							<div class="schedule-table__top">
+								<button class="schedule-table__arrow schedule-table__arrow--prev" aria-label="Назад">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</button>
+								<span class="schedule-table__dates">5.05.2023 – 11.05.2023</span>
+								<button class="schedule-table__arrow schedule-table__arrow--next" aria-label="Далее">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</button>
+							</div>
+							<div class="schedule-table__scroll">
+								<table class="schedule-table__table">
+									<thead class="schedule-table__head">
+										<tr class="schedule-table__row">
+											<td class="schedule-table__elem">
+												<span class="schedule-table__heading">5.05</span>
+											</td>
+											<td class="schedule-table__elem">
+												<span class="schedule-table__heading">6.05</span>
+											</td>
+											<td class="schedule-table__elem">
+												<span class="schedule-table__heading">7.05</span>
+											</td>
+											<td class="schedule-table__elem">
+												<span class="schedule-table__heading">8.05</span>
+											</td>
+											<td class="schedule-table__elem">
+												<span class="schedule-table__heading">9.05</span>
+											</td>
+											<td class="schedule-table__elem">
+												<span class="schedule-table__heading">10.05</span>
+											</td>
+											<td class="schedule-table__elem">
+												<span class="schedule-table__heading">11.05</span>
+											</td>
+										</tr>
+									</thead>
+									<tbody class="schedule-table__body">
+										<tr class="schedule-table__row">
+											<td class="schedule-table__elem">
+												<label for="schedule-table-01" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-01" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-02" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-02" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-03" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-03" class="schedule-table__checkbox" checked>
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-04" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-04" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-05" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-05" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-06" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-06" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-07" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-07" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+										</tr>
+										<tr class="schedule-table__row">
+											<td class="schedule-table__elem">
+												<label for="schedule-table-01" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-01" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-02" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-02" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-03" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-03" class="schedule-table__checkbox" checked>
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-04" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-04" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-05" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-05" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-06" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-06" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-07" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-07" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+										</tr>
+										<tr class="schedule-table__row">
+											<td class="schedule-table__elem">
+												<label for="schedule-table-01" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-01" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-02" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-02" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-03" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-03" class="schedule-table__checkbox" checked>
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-04" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-04" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-05" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-05" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-06" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-06" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-07" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-07" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="schedule__wrap">
+						<div class="schedule__top">
+							<h2 class="schedule__heading">Запланированные консультации</h2>
+						</div>
+						<div class="schedule__wrapper">
+							<div class="schedule__item schedule-card is--active">
+								<div class="schedule-card__mini-group">
+									<span class="schedule-card__date">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-time"></use>
+										</svg>
+										<span>6.05.2023 | (14:00 – 15:00)</span>
+									</span>
+								</div>
+								<div class="schedule-card__mini-group">
+									<div class="schedule-card__user">
+										<picture class="schedule-card__user-img">
+											<img src="img/user.jpg" alt="Image">
+										</picture>
+										<div class="schedule-card__user-group">
+											<a href="#" class="schedule-card__user-name">Мария Петрухина</a>
+										</div>
+									</div>
+								</div>
+								<div class="schedule-card__mini-group">
+									<a href="#" class="schedule-card__link">Отменить</a>
+								</div>
+							</div>
+							<div class="schedule__item schedule-card is--active">
+								<div class="schedule-card__mini-group">
+									<span class="schedule-card__date">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-time"></use>
+										</svg>
+										<span>6.05.2023 | (14:00 – 15:00)</span>
+									</span>
+								</div>
+								<div class="schedule-card__mini-group">
+									<div class="schedule-card__user">
+										<picture class="schedule-card__user-img">
+											<img src="img/user.jpg" alt="Image">
+										</picture>
+										<div class="schedule-card__user-group">
+											<a href="#" class="schedule-card__user-name">Мария Петрухина</a>
+										</div>
+									</div>
+								</div>
+								<div class="schedule-card__mini-group">
+									<a href="#" class="schedule-card__link">Отменить</a>
+								</div>
+							</div>
+							<div class="schedule__item schedule-card is--active">
+								<div class="schedule-card__mini-group">
+									<span class="schedule-card__date">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-time"></use>
+										</svg>
+										<span>6.05.2023 | (14:00 – 15:00)</span>
+									</span>
+								</div>
+								<div class="schedule-card__mini-group">
+									<div class="schedule-card__user">
+										<picture class="schedule-card__user-img">
+											<img src="img/user.jpg" alt="Image">
+										</picture>
+										<div class="schedule-card__user-group">
+											<a href="#" class="schedule-card__user-name">Алексей Новоселов</a>
+										</div>
+									</div>
+								</div>
+								<div class="schedule-card__mini-group">
+									<a href="#" class="schedule-card__link">Подтвердить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of schedule -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer footer--black footer--indent" id="footer">
+			<div class="container">
+				<div class="footer__main">
+					<div class="footer__wrapper">
+						<div class="footer__block footer__block--desktop">
+							<picture class="footer__logotype">
+								<img src="img/logotype.svg" alt="MAGISTA">
+							</picture>
+						</div>
+						<div class="footer__block footer__block--desktop">
+							<h3 class="footer__title">Карта Школы:</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">О школе</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">Преподаватели</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">Подписка</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__title">Клиентская поддержка:</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a href="tel:88008008080" class="footer__link">8 (800) 800-80-80</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="mailto:info@magic-school.ru" class="footer__link">info@magic-school.ru</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__title">Наши соцсети:</h3>
+							<div class="c-socnav footer__socnav">
+								<ul class="c-socnav__list">
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__wrapper">
+						<p class="footer__copyright">© 2023 Все права защищены | <a href="#">Политика конфиденциальности</a></p>
+						<p class="footer__copyright">Разработано в <a href="#">Студии Зайцева</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- modals -->
+	<!-- end of modals -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
