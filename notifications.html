@@ -22,12 +22,14 @@
 		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper">
+					<div class="c-notification header__notification header__notification--mobile c-notification--dot">
+						<a href="#" class="c-notification__trigger">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-notification"></use>
+							</svg>
+						</a>
+					</div>
 					<div class="header__group">
-						<button class="hamburger" id="hamburger-toggle">
-							<span class="hamburger__inner"></span>
-							<span class="hamburger__inner"></span>
-							<span class="hamburger__inner"></span>
-						</button>
 						<a href="#" class="header__btn btn btn--border">
 							<span>Лавка Чудес</span>
 							<svg>
@@ -54,6 +56,11 @@
 							</a>
 						</div>
 					</div>
+					<div class="c-user header__user header__user--mobile">
+						<a href="#" class="c-user__preview">
+							<img src="img/user.jpg" alt="Image">
+						</a>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -71,6 +78,9 @@
 					</picture>
 					<div class="notifications__wrapper">
 						<div class="notifications__item">
+							<svg class="notifications__decor">
+								<use xlink:href="img/sprite.svg#card-notification-decor"></use>
+							</svg>
 							<p class="notifications__description">Внимание! Перенос занятия по Основам Магии 28.04 </p>
 						</div>
 						<div class="notifications__item">

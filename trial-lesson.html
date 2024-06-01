@@ -22,12 +22,14 @@
 		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper">
+					<div class="c-notification header__notification header__notification--mobile c-notification--dot">
+						<a href="#" class="c-notification__trigger">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-notification"></use>
+							</svg>
+						</a>
+					</div>
 					<div class="header__group">
-						<button class="hamburger" id="hamburger-toggle">
-							<span class="hamburger__inner"></span>
-							<span class="hamburger__inner"></span>
-							<span class="hamburger__inner"></span>
-						</button>
 						<a href="#" class="header__btn btn btn--border">
 							<span>Лавка Чудес</span>
 							<svg>
@@ -54,6 +56,11 @@
 							</a>
 						</div>
 					</div>
+					<div class="c-user header__user header__user--mobile">
+						<a href="#" class="c-user__preview">
+							<img src="img/user.jpg" alt="Image">
+						</a>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -78,6 +85,7 @@
 					<div class="trial-lesson__wrapper">
 						<h3 class="trial-lesson__heading">Получите <span>3 дня бесплатного доступа</span> <br>к обучению в Magista</h3>
 						<a href="#" class="trial-lesson__btn btn-decor">
+							<!-- <span class="btn-decor__fill"></span> -->
 							<span class="btn-decor__line btn-decor__line--top"></span>
 							<span class="btn-decor__line btn-decor__line--right"></span>
 							<span class="btn-decor__line btn-decor__line--bottom"></span>
@@ -98,6 +106,18 @@
 							<span>Получить доступ</span>
 							<!-- end of content -->
 						</a>
+						<svg class="trial-lesson__decor trial-lesson__decor--top-left">
+							<use xlink:href="img/sprite.svg#card-decor-top-left"></use>
+						</svg>
+						<svg class="trial-lesson__decor trial-lesson__decor--top-right">
+							<use xlink:href="img/sprite.svg#card-decor-top-left"></use>
+						</svg>
+						<svg class="trial-lesson__decor trial-lesson__decor--bottom-right">
+							<use xlink:href="img/sprite.svg#card-decor-top-left"></use>
+						</svg>
+						<svg class="trial-lesson__decor trial-lesson__decor--bottom-left">
+							<use xlink:href="img/sprite.svg#card-decor-top-left"></use>
+						</svg>
 					</div>
 				</div>
 			</section>

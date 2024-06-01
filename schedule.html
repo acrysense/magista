@@ -22,12 +22,14 @@
 		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper">
+					<div class="c-notification header__notification header__notification--mobile c-notification--dot">
+						<a href="#" class="c-notification__trigger">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-notification"></use>
+							</svg>
+						</a>
+					</div>
 					<div class="header__group">
-						<button class="hamburger" id="hamburger-toggle">
-							<span class="hamburger__inner"></span>
-							<span class="hamburger__inner"></span>
-							<span class="hamburger__inner"></span>
-						</button>
 						<a href="#" class="header__btn btn btn--border">
 							<span>Лавка Чудес</span>
 							<svg>
@@ -54,6 +56,11 @@
 							</a>
 						</div>
 					</div>
+					<div class="c-user header__user header__user--mobile">
+						<a href="#" class="c-user__preview">
+							<img src="img/user.jpg" alt="Image">
+						</a>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -78,9 +85,9 @@
 						<div class="schedule__wrapper">
 							<div class="schedule__item schedule-card is--disabled">
 								<div class="schedule-card__group">
-									<span class="schedule-card__date">
+									<span class="schedule-card__status">
 										<svg>
-											<use xlink:href="img/sprite.svg#icon-time"></use>
+											<use xlink:href="img/sprite.svg#icon-done"></use>
 										</svg>
 										<span>10.05.2023 – 18:00 </span>
 									</span>
@@ -92,9 +99,9 @@
 							</div>
 							<div class="schedule__item schedule-card is--disabled">
 								<div class="schedule-card__group">
-									<span class="schedule-card__date">
+									<span class="schedule-card__status">
 										<svg>
-											<use xlink:href="img/sprite.svg#icon-time"></use>
+											<use xlink:href="img/sprite.svg#icon-done"></use>
 										</svg>
 										<span>15.05.2023 – 18:00 </span>
 									</span>
@@ -106,9 +113,9 @@
 							</div>
 							<div class="schedule__item schedule-card is--active">
 								<div class="schedule-card__group">
-									<span class="schedule-card__date">
+									<span class="schedule-card__status">
 										<svg>
-											<use xlink:href="img/sprite.svg#icon-time"></use>
+											<use xlink:href="img/sprite.svg#icon-done"></use>
 										</svg>
 										<span>20.05.2023 – 18:00 </span>
 									</span>
@@ -120,9 +127,9 @@
 							</div>
 							<div class="schedule__item schedule-card is--active">
 								<div class="schedule-card__group">
-									<span class="schedule-card__date">
+									<span class="schedule-card__status">
 										<svg>
-											<use xlink:href="img/sprite.svg#icon-time"></use>
+											<use xlink:href="img/sprite.svg#icon-done"></use>
 										</svg>
 										<span>25.05.2023 – 18:00 </span>
 									</span>
@@ -134,9 +141,9 @@
 							</div>
 							<div class="schedule__item schedule-card is--active">
 								<div class="schedule-card__group">
-									<span class="schedule-card__date">
+									<span class="schedule-card__status">
 										<svg>
-											<use xlink:href="img/sprite.svg#icon-time"></use>
+											<use xlink:href="img/sprite.svg#icon-done"></use>
 										</svg>
 										<span>30.05.2023 – 18:00 </span>
 									</span>

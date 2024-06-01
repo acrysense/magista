@@ -22,12 +22,14 @@
 		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper">
+					<div class="c-notification header__notification header__notification--mobile c-notification--dot">
+						<a href="#" class="c-notification__trigger">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-notification"></use>
+							</svg>
+						</a>
+					</div>
 					<div class="header__group">
-						<button class="hamburger" id="hamburger-toggle">
-							<span class="hamburger__inner"></span>
-							<span class="hamburger__inner"></span>
-							<span class="hamburger__inner"></span>
-						</button>
 						<a href="#" class="header__btn btn btn--border">
 							<span>Лавка Чудес</span>
 							<svg>
@@ -53,6 +55,11 @@
 								<img src="img/user.jpg" alt="Image">
 							</a>
 						</div>
+					</div>
+					<div class="c-user header__user header__user--mobile">
+						<a href="#" class="c-user__preview">
+							<img src="img/user.jpg" alt="Image">
+						</a>
 					</div>
 				</div>
 			</div>
@@ -89,7 +96,7 @@
 								<table class="schedule-table__table">
 									<thead class="schedule-table__head">
 										<tr class="schedule-table__row">
-											<td class="schedule-table__elem">
+											<td class="schedule-table__elem is--disabled">
 												<span class="schedule-table__heading">5.05</span>
 											</td>
 											<td class="schedule-table__elem">
@@ -114,7 +121,65 @@
 									</thead>
 									<tbody class="schedule-table__body">
 										<tr class="schedule-table__row">
+											<td class="schedule-table__elem is--disabled">
+												<label for="schedule-table-01" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-01" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem is--selected">
+												<label for="schedule-table-02" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-02" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
 											<td class="schedule-table__elem">
+												<label for="schedule-table-03" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-03" class="schedule-table__checkbox" checked>
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem is--selected">
+												<label for="schedule-table-04" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-04" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-05" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-05" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-06" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-06" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+											<td class="schedule-table__elem">
+												<label for="schedule-table-07" class="schedule-table__label">
+													<input type="checkbox" id="schedule-table-07" class="schedule-table__checkbox">
+													<div class="schedule-table__group">
+														<span class="schedule-table__value">12:00 - 13:00</span>
+													</div>
+												</label>
+											</td>
+										</tr>
+										<tr class="schedule-table__row">
+											<td class="schedule-table__elem is--disabled">
 												<label for="schedule-table-01" class="schedule-table__label">
 													<input type="checkbox" id="schedule-table-01" class="schedule-table__checkbox">
 													<div class="schedule-table__group">
@@ -172,65 +237,7 @@
 											</td>
 										</tr>
 										<tr class="schedule-table__row">
-											<td class="schedule-table__elem">
-												<label for="schedule-table-01" class="schedule-table__label">
-													<input type="checkbox" id="schedule-table-01" class="schedule-table__checkbox">
-													<div class="schedule-table__group">
-														<span class="schedule-table__value">12:00 - 13:00</span>
-													</div>
-												</label>
-											</td>
-											<td class="schedule-table__elem">
-												<label for="schedule-table-02" class="schedule-table__label">
-													<input type="checkbox" id="schedule-table-02" class="schedule-table__checkbox">
-													<div class="schedule-table__group">
-														<span class="schedule-table__value">12:00 - 13:00</span>
-													</div>
-												</label>
-											</td>
-											<td class="schedule-table__elem">
-												<label for="schedule-table-03" class="schedule-table__label">
-													<input type="checkbox" id="schedule-table-03" class="schedule-table__checkbox" checked>
-													<div class="schedule-table__group">
-														<span class="schedule-table__value">12:00 - 13:00</span>
-													</div>
-												</label>
-											</td>
-											<td class="schedule-table__elem">
-												<label for="schedule-table-04" class="schedule-table__label">
-													<input type="checkbox" id="schedule-table-04" class="schedule-table__checkbox">
-													<div class="schedule-table__group">
-														<span class="schedule-table__value">12:00 - 13:00</span>
-													</div>
-												</label>
-											</td>
-											<td class="schedule-table__elem">
-												<label for="schedule-table-05" class="schedule-table__label">
-													<input type="checkbox" id="schedule-table-05" class="schedule-table__checkbox">
-													<div class="schedule-table__group">
-														<span class="schedule-table__value">12:00 - 13:00</span>
-													</div>
-												</label>
-											</td>
-											<td class="schedule-table__elem">
-												<label for="schedule-table-06" class="schedule-table__label">
-													<input type="checkbox" id="schedule-table-06" class="schedule-table__checkbox">
-													<div class="schedule-table__group">
-														<span class="schedule-table__value">12:00 - 13:00</span>
-													</div>
-												</label>
-											</td>
-											<td class="schedule-table__elem">
-												<label for="schedule-table-07" class="schedule-table__label">
-													<input type="checkbox" id="schedule-table-07" class="schedule-table__checkbox">
-													<div class="schedule-table__group">
-														<span class="schedule-table__value">12:00 - 13:00</span>
-													</div>
-												</label>
-											</td>
-										</tr>
-										<tr class="schedule-table__row">
-											<td class="schedule-table__elem">
+											<td class="schedule-table__elem is--disabled">
 												<label for="schedule-table-01" class="schedule-table__label">
 													<input type="checkbox" id="schedule-table-01" class="schedule-table__checkbox">
 													<div class="schedule-table__group">

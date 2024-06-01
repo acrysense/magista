@@ -22,7 +22,7 @@
 		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper">
-					<button class="hamburger" id="hamburger-toggle">
+					<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
 						<span class="hamburger__inner"></span>
 						<span class="hamburger__inner"></span>
 						<span class="hamburger__inner"></span>
@@ -65,6 +65,11 @@
 							</svg>
 						</a>
 					</div>
+					<button class="header__circle-btn" aria-label="Лавка Чудес">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-magic"></use>
+						</svg>
+					</button>
 				</div>
 			</div>
 		</header>
@@ -708,6 +713,65 @@
 		<!-- end of footer -->
 	</div>
 	<!-- end of wrapper -->
+	<!-- menu -->
+	<div class="menu" id="menu">
+		<div class="menu__wrap">
+			<div class="menu__top">
+				<button class="menu__close" aria-label="Закрыть">
+					<span class="menu__close-inner"></span>
+					<span class="menu__close-inner"></span>
+				</button>
+				<picture class="menu__logotype">
+					<img src="img/logotype.svg" alt="MAGISTA">
+				</picture>
+			</div>
+			<nav class="nav menu__nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#" class="nav__link">О школе</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Преподаватели</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Обучение</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Тарифы</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">FAQ</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="menu__btn btn-decor">
+				<span class="btn-decor__line btn-decor__line--top"></span>
+				<span class="btn-decor__line btn-decor__line--right"></span>
+				<span class="btn-decor__line btn-decor__line--bottom"></span>
+				<span class="btn-decor__line btn-decor__line--left"></span>
+				<svg class="btn-decor__model btn-decor__model--tl">
+					<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+				</svg>
+				<svg class="btn-decor__model btn-decor__model--tr">
+					<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+				</svg>
+				<svg class="btn-decor__model btn-decor__model--bl">
+					<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+				</svg>
+				<svg class="btn-decor__model btn-decor__model--br">
+					<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+				</svg>
+				<!-- content -->
+				<span>Получить доступ</span>
+				<!-- end of content -->
+			</a>
+		</div>
+		<picture class="menu__bg">
+			<source srcset="img/auth-bg.jpg" media="(min-width: 576px)">
+			<img src="img/auth-mobile-bg.jpg" alt="Image">
+		</picture>
+	</div>
+	<!-- end of menu -->
 	<!-- modals -->
 	<!-- end of modals -->
 	<!-- scripts -->
