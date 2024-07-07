@@ -22,35 +22,13 @@
 		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper">
-					<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
-						<span class="hamburger__inner"></span>
-						<span class="hamburger__inner"></span>
-						<span class="hamburger__inner"></span>
-					</button>
-					<nav class="nav header__nav">
-						<ul class="nav__list">
-							<li class="nav__item">
-								<a href="#" class="nav__link">О школе</a>
-							</li>
-							<li class="nav__item">
-								<a href="#" class="nav__link">Преподаватели</a>
-							</li>
-							<li class="nav__item">
-								<a href="#" class="nav__link">Обучение</a>
-							</li>
-							<li class="nav__item">
-								<a href="#" class="nav__link">Тарифы</a>
-							</li>
-							<li class="nav__item">
-								<a href="#" class="nav__link">FAQ</a>
-							</li>
-						</ul>
-					</nav>
-					<a href="index.html" class="header__logotype">
-						<picture>
-							<img src="img/logotype.svg" alt="MAGISTA">
-						</picture>
-					</a>
+					<div class="c-notification header__notification header__notification--mobile c-notification--dot">
+						<a href="#" class="c-notification__trigger">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-notification"></use>
+							</svg>
+						</a>
+					</div>
 					<div class="header__group">
 						<a href="#" class="header__btn btn btn--border">
 							<span>Лавка Чудес</span>
@@ -58,18 +36,31 @@
 								<use xlink:href="img/sprite.svg#icon-magic"></use>
 							</svg>
 						</a>
-						<a href="#" class="header__btn btn">
-							<span>Получить доступ</span>
-							<svg>
-								<use xlink:href="img/sprite.svg#icon-unlock"></use>
-							</svg>
+					</div>
+					<a href="index.html" class="header__logotype">
+						<picture>
+							<img src="img/logotype.svg" alt="MAGISTA">
+						</picture>
+					</a>
+					<div class="header__group">
+						<div class="c-notification header__notification c-notification--dot">
+							<a href="#" class="c-notification__trigger">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-notification"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="c-user header__user">
+							<a href="#" class="c-user__preview">
+								<img src="img/user.jpg" alt="Image">
+							</a>
+						</div>
+					</div>
+					<div class="c-user header__user header__user--mobile">
+						<a href="#" class="c-user__preview">
+							<img src="img/user.jpg" alt="Image">
 						</a>
 					</div>
-					<button class="header__circle-btn" aria-label="Лавка Чудес">
-						<svg>
-							<use xlink:href="img/sprite.svg#icon-magic"></use>
-						</svg>
-					</button>
 				</div>
 			</div>
 		</header>
@@ -104,6 +95,18 @@
 									<span class="btn-decor__line btn-decor__line--right"></span>
 									<span class="btn-decor__line btn-decor__line--bottom"></span>
 									<span class="btn-decor__line btn-decor__line--left"></span>
+									<svg class="btn-decor__fill btn-decor__fill--tl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--tr">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--bl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--br">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
 									<svg class="btn-decor__model btn-decor__model--tl">
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
@@ -117,7 +120,7 @@
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
 									<!-- content -->
-									<span>Записаться на консультацию</span>
+									<span>Записаться на&nbsp;консультацию</span>
 									<!-- end of content -->
 								</a>
 							</div>
@@ -139,6 +142,18 @@
 									<span class="btn-decor__line btn-decor__line--right"></span>
 									<span class="btn-decor__line btn-decor__line--bottom"></span>
 									<span class="btn-decor__line btn-decor__line--left"></span>
+									<svg class="btn-decor__fill btn-decor__fill--tl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--tr">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--bl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--br">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
 									<svg class="btn-decor__model btn-decor__model--tl">
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
@@ -152,7 +167,7 @@
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
 									<!-- content -->
-									<span>Записаться на консультацию</span>
+									<span>Записаться на&nbsp;консультацию</span>
 									<!-- end of content -->
 								</a>
 							</div>
@@ -174,6 +189,18 @@
 									<span class="btn-decor__line btn-decor__line--right"></span>
 									<span class="btn-decor__line btn-decor__line--bottom"></span>
 									<span class="btn-decor__line btn-decor__line--left"></span>
+									<svg class="btn-decor__fill btn-decor__fill--tl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--tr">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--bl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--br">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
 									<svg class="btn-decor__model btn-decor__model--tl">
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
@@ -187,7 +214,7 @@
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
 									<!-- content -->
-									<span>Записаться на консультацию</span>
+									<span>Записаться на&nbsp;консультацию</span>
 									<!-- end of content -->
 								</a>
 							</div>
@@ -209,6 +236,18 @@
 									<span class="btn-decor__line btn-decor__line--right"></span>
 									<span class="btn-decor__line btn-decor__line--bottom"></span>
 									<span class="btn-decor__line btn-decor__line--left"></span>
+									<svg class="btn-decor__fill btn-decor__fill--tl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--tr">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--bl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--br">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
 									<svg class="btn-decor__model btn-decor__model--tl">
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
@@ -222,7 +261,7 @@
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
 									<!-- content -->
-									<span>Записаться на консультацию</span>
+									<span>Записаться на&nbsp;консультацию</span>
 									<!-- end of content -->
 								</a>
 							</div>
@@ -244,6 +283,18 @@
 									<span class="btn-decor__line btn-decor__line--right"></span>
 									<span class="btn-decor__line btn-decor__line--bottom"></span>
 									<span class="btn-decor__line btn-decor__line--left"></span>
+									<svg class="btn-decor__fill btn-decor__fill--tl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--tr">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--bl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--br">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
 									<svg class="btn-decor__model btn-decor__model--tl">
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
@@ -257,7 +308,7 @@
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
 									<!-- content -->
-									<span>Записаться на консультацию</span>
+									<span>Записаться на&nbsp;консультацию</span>
 									<!-- end of content -->
 								</a>
 							</div>
@@ -279,6 +330,18 @@
 									<span class="btn-decor__line btn-decor__line--right"></span>
 									<span class="btn-decor__line btn-decor__line--bottom"></span>
 									<span class="btn-decor__line btn-decor__line--left"></span>
+									<svg class="btn-decor__fill btn-decor__fill--tl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--tr">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--bl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--br">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
 									<svg class="btn-decor__model btn-decor__model--tl">
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
@@ -292,7 +355,7 @@
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
 									<!-- content -->
-									<span>Записаться на консультацию</span>
+									<span>Записаться на&nbsp;консультацию</span>
 									<!-- end of content -->
 								</a>
 							</div>
@@ -314,6 +377,18 @@
 									<span class="btn-decor__line btn-decor__line--right"></span>
 									<span class="btn-decor__line btn-decor__line--bottom"></span>
 									<span class="btn-decor__line btn-decor__line--left"></span>
+									<svg class="btn-decor__fill btn-decor__fill--tl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--tr">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--bl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--br">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
 									<svg class="btn-decor__model btn-decor__model--tl">
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
@@ -327,7 +402,7 @@
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
 									<!-- content -->
-									<span>Записаться на консультацию</span>
+									<span>Записаться на&nbsp;консультацию</span>
 									<!-- end of content -->
 								</a>
 							</div>
@@ -349,6 +424,18 @@
 									<span class="btn-decor__line btn-decor__line--right"></span>
 									<span class="btn-decor__line btn-decor__line--bottom"></span>
 									<span class="btn-decor__line btn-decor__line--left"></span>
+									<svg class="btn-decor__fill btn-decor__fill--tl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--tr">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--bl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--br">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
 									<svg class="btn-decor__model btn-decor__model--tl">
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
@@ -362,7 +449,7 @@
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
 									<!-- content -->
-									<span>Записаться на консультацию</span>
+									<span>Записаться на&nbsp;консультацию</span>
 									<!-- end of content -->
 								</a>
 							</div>
@@ -384,6 +471,18 @@
 									<span class="btn-decor__line btn-decor__line--right"></span>
 									<span class="btn-decor__line btn-decor__line--bottom"></span>
 									<span class="btn-decor__line btn-decor__line--left"></span>
+									<svg class="btn-decor__fill btn-decor__fill--tl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--tr">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--bl">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
+									<svg class="btn-decor__fill btn-decor__fill--br">
+										<use xlink:href="img/sprite.svg#btn-decor-left-bottom-fill"></use>
+									</svg>
 									<svg class="btn-decor__model btn-decor__model--tl">
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
@@ -397,7 +496,7 @@
 										<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
 									</svg>
 									<!-- content -->
-									<span>Записаться на консультацию</span>
+									<span>Записаться на&nbsp;консультацию</span>
 									<!-- end of content -->
 								</a>
 							</div>

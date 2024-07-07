@@ -77,7 +77,7 @@
 		<!-- content -->
 		<div class="wrapper__content">
 			<!-- main -->
-			<section class="main" id="main" style="background-image: url(img/main-bg.jpg);">
+			<section class="main" id="main">
 				<div class="container">
 					<div class="main__wrapper">
 						<h3 class="main__subtitle">Центр развития способностей человека</h3>
@@ -124,6 +124,10 @@
 							</svg>
 						</a>
 					</div>
+					<picture class="main__bg">
+						<source srcset="img/main-bg.jpg" media="(min-width: 768px)">
+						<img src="img/main-bg-mobile.jpg" alt="Image">
+					</picture>
 				</div>
 			</section>
 			<!-- end of main -->
@@ -625,9 +629,16 @@
 					<div class="cost-education__wrap">
 						<div class="cost-education__top">
 							<h2 class="cost-education__heading">Стоимость обучения</h2>
-							<p class="cost-education__description">
+							<p class="cost-education__description cost-education__description--desktop">
 								Доступ к обучению в школе Magista открывается после активации подписки. Подписку можно оформить на 1, 6 или 12 месяцев. Оплачивая подписку, вы получаете доступ к онлайн-занятиям<br>
 								по дисциплинам вашего факультета с проверкой домашних занятий преподавателями,<br>
+								а также доступ к нашей библиотеке знаний.
+							</p>
+							<p class="cost-education__description cost-education__description--mobile">
+								Доступ к обучению в школе Magista открывается после активации подписки. Подписку можно оформить на 1, 6 или 12 месяцев.
+								<br><br>
+								Оплачивая подписку, <br>вы получаете доступ к онлайн-занятиям
+								по дисциплинам вашего факультета с проверкой домашних занятий преподавателями,
 								а также доступ к нашей библиотеке знаний.
 							</p>
 						</div>
@@ -941,7 +952,7 @@
 						<svg class="application__decor application__decor--br">
 							<use xlink:href="img/sprite.svg#card-decor-top-left"></use>
 						</svg>
-						<h2 class="application__heading">Пройдите пробный урок и получите <br><span>3 дня бесплатного доступа</span> к обучению</h2>
+						<h2 class="application__heading">Пройдите пробный урок&nbsp;и&nbsp;получите <br><span>3 дня бесплатного доступа</span> к&nbsp;обучению</h2>
 						<form action="#" class="application-form application__form">
 							<div class="input-field application-form__input">
 								<div class="input-field__inner">
@@ -972,7 +983,7 @@
 									<span class="switch__title">Я принимаю <a href="#">условия <br>передачи информации</a></span>
 								</div>
 							</label>
-							<button class="application-form__btn btn-decor">
+							<button class="application-form__btn btn-decor btn-decor--fill">
 								<span class="btn-decor__line btn-decor__line--top"></span>
 								<span class="btn-decor__line btn-decor__line--right"></span>
 								<span class="btn-decor__line btn-decor__line--bottom"></span>
@@ -1082,59 +1093,119 @@
 	<!-- menu -->
 	<div class="menu" id="menu">
 		<div class="menu__wrap">
-			<div class="menu__top">
-				<button class="menu__close" aria-label="Закрыть">
-					<span class="menu__close-inner"></span>
-					<span class="menu__close-inner"></span>
-				</button>
-				<picture class="menu__logotype">
-					<img src="img/logotype.svg" alt="MAGISTA">
-				</picture>
+			<div class="menu__main">
+				<div class="menu__top">
+					<button class="menu__close" aria-label="Закрыть">
+						<span class="menu__close-inner"></span>
+						<span class="menu__close-inner"></span>
+					</button>
+					<picture class="menu__logotype">
+						<img src="img/logotype.svg" alt="MAGISTA">
+					</picture>
+				</div>
+				<nav class="nav menu__nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">О школе</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Преподаватели</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Обучение</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Тарифы</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">FAQ</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="#" class="menu__btn btn-decor">
+					<span class="btn-decor__line btn-decor__line--top"></span>
+					<span class="btn-decor__line btn-decor__line--right"></span>
+					<span class="btn-decor__line btn-decor__line--bottom"></span>
+					<span class="btn-decor__line btn-decor__line--left"></span>
+					<svg class="btn-decor__model btn-decor__model--tl">
+						<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+					</svg>
+					<svg class="btn-decor__model btn-decor__model--tr">
+						<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+					</svg>
+					<svg class="btn-decor__model btn-decor__model--bl">
+						<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+					</svg>
+					<svg class="btn-decor__model btn-decor__model--br">
+						<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
+					</svg>
+					<!-- content -->
+					<span>Получить доступ</span>
+					<!-- end of content -->
+				</a>
 			</div>
-			<nav class="nav menu__nav">
-				<ul class="nav__list">
-					<li class="nav__item">
-						<a href="#" class="nav__link">О школе</a>
-					</li>
-					<li class="nav__item">
-						<a href="#" class="nav__link">Преподаватели</a>
-					</li>
-					<li class="nav__item">
-						<a href="#" class="nav__link">Обучение</a>
-					</li>
-					<li class="nav__item">
-						<a href="#" class="nav__link">Тарифы</a>
-					</li>
-					<li class="nav__item">
-						<a href="#" class="nav__link">FAQ</a>
-					</li>
-				</ul>
-			</nav>
-			<a href="#" class="menu__btn btn-decor">
-				<span class="btn-decor__line btn-decor__line--top"></span>
-				<span class="btn-decor__line btn-decor__line--right"></span>
-				<span class="btn-decor__line btn-decor__line--bottom"></span>
-				<span class="btn-decor__line btn-decor__line--left"></span>
-				<svg class="btn-decor__model btn-decor__model--tl">
-					<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
-				</svg>
-				<svg class="btn-decor__model btn-decor__model--tr">
-					<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
-				</svg>
-				<svg class="btn-decor__model btn-decor__model--bl">
-					<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
-				</svg>
-				<svg class="btn-decor__model btn-decor__model--br">
-					<use xlink:href="img/sprite.svg#btn-decor-left-bottom"></use>
-				</svg>
-				<!-- content -->
-				<span>Получить доступ</span>
-				<!-- end of content -->
-			</a>
+			<div class="footer menu__footer">
+				<div class="footer__main">
+					<div class="footer__wrapper">
+						<div class="footer__block footer__block--desktop">
+							<picture class="footer__logotype">
+								<img src="img/logotype.svg" alt="MAGISTA">
+							</picture>
+						</div>
+						<div class="footer__block footer__block--desktop">
+							<h3 class="footer__title">Карта Школы:</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">О школе</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">Преподаватели</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="#" class="footer__link">Подписка</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__title">Клиентская поддержка:</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a href="tel:88008008080" class="footer__link">8 (800) 800-80-80</a>
+								</li>
+								<li class="footer__list-item">
+									<a href="mailto:info@magic-school.ru" class="footer__link">info@magic-school.ru</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__title">Наши соцсети:</h3>
+							<div class="c-socnav footer__socnav">
+								<ul class="c-socnav__list">
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__wrapper">
+						<p class="footer__copyright">© 2023 Все права защищены | <a href="#">Политика конфиденциальности</a></p>
+						<p class="footer__copyright">Разработано в <a href="#">Студии Зайцева</a></p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<picture class="menu__bg">
 			<source srcset="img/auth-bg.jpg" media="(min-width: 576px)">
-			<img src="img/auth-mobile-bg.jpg" alt="Image">
+			<img src="img/menu-bg-mobile.png" alt="Image">
 		</picture>
 	</div>
 	<!-- end of menu -->
